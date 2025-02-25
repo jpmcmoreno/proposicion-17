@@ -176,7 +176,7 @@ def ejecutar_paso(fig, funcion_nombre, parametros):
 def cargar_pasos_excel():
     """Carga los pasos desde Excel o crea un DataFrame de ejemplo"""
     try:
-        return pd.read_excel("C:/Users/jpmcm/OneDrive/Escritorio/Matemática Fundamental/Proposicion 17 aplicación/pruebaV2.xlsx")
+        return pd.read_excel(""https://raw.githubusercontent.com/jpmcmoreno/Proposicion-17/main/pruebaV2.xlsx"")
     except:
         return pd.DataFrame({
             'paso': [1, 2, 3, 4],
@@ -207,7 +207,7 @@ def cargar_pasos_excel():
         })
 
 
-proposiciones_euclides = pd.read_excel('C:/Users/jpmcm/OneDrive/Escritorio/Matemática Fundamental/Proposicion 17 aplicación/proposiciones_euclides.xlsx')
+proposiciones_euclides = pd.read_excel("https://raw.githubusercontent.com/jpmcmoreno/Proposicion-17/main/proposiciones_euclides.xlsx")
 def invocar_descripcion(nombre, df):
     resultado = df.loc[df['Proposición'] == nombre, 'Descripción']
     return resultado.iloc[0] if not resultado.empty else "Proposición no encontrada"
