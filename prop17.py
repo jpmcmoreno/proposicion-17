@@ -176,7 +176,7 @@ def ejecutar_paso(fig, funcion_nombre, parametros):
 def cargar_pasos_excel():
     """Carga los pasos desde Excel o crea un DataFrame de ejemplo"""
     try:
-        return pd.read_excel(""https://raw.githubusercontent.com/jpmcmoreno/Proposicion-17/main/pruebaV2.xlsx"")
+        return pd.read_excel("https://raw.githubusercontent.com/jpmcmoreno/Proposicion-17/main/pruebaV2.xlsx")
     except:
         return pd.DataFrame({
             'paso': [1, 2, 3, 4],
